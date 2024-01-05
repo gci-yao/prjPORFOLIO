@@ -1,0 +1,542 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: #02070a;
+    padding: 5px;
+    align-content: normal;
+    flex-direction: row;
+}
+
+nav ul {
+    display: flex;
+    color: wheat;
+    margin-left: 55px;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul li {
+    letter-spacing: 2px;
+    padding-left: 45px;
+    font-size: calc(0.6rem + 0.6vw);
+    margin: 0px;
+}
+
+#act {
+    text-align: center;
+    align-items: center;
+    margin-left: -30px;
+}
+
+.act,
+.act {
+    border: 0.5px solid white;
+    text-align: center;
+    color: white;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 100px;
+    display: block;
+    margin: 0px;
+}
+
+.act:hover {
+    color: rgb(255, 145, 0);
+    transition: 2.5s;
+    border: black;
+}
+
+
+/* li.add,
+li:hover {
+    border: 0.5px solid white;
+    text-align: center;
+    color: aqua;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 100px;
+    display: block;
+} */
+
+nav ul li:hover {
+    transition: 2s;
+    cursor: pointer;
+    color: aqua;
+}
+
+#portfolio {
+    font-size: calc(1.3rem + 1.3vw);
+    cursor: pointer;
+}
+
+#toggle {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    margin-top: -50px;
+    margin-left: 140px;
+}
+
+#toggle::before {
+    content: "\2630";
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 8px;
+    height: 10px;
+    font-size: calc(0.6rem + 1vw);
+}
+
+#toggle.active::before {
+    content: "\2715";
+    color: red;
+}
+
+#sidebar {
+    background-color: black;
+    width: 250px;
+    height: 750px;
+    margin-top: 02px;
+    color: aqua;
+    font-size: calc(1.2rem + 1.1vw);
+    padding: 20px;
+    display: block;
+    border-radius: 4px;
+    margin-left: -300px;
+    transition: 1.3s ease;
+}
+
+#sidebar.active {
+    margin-left: 0px;
+    transition: 2s;
+}
+
+#sidebar dd {
+    padding: 60px 10px;
+}
+
+#sidebar dd#act1,
+dd:hover {
+    border: 1px solid white;
+    margin: 0;
+    height: 1px;
+    width: 260px;
+    margin-left: -30px;
+    background: whitesmoke;
+    color: black;
+    transition: 1s;
+}
+
+dt {
+    color: teal;
+}
+
+#deporf {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+fieldset {
+    border-right: 10px solid rgb(255, 166, 0);
+    border-top: 10px solid rgb(255, 166, 0);
+    border-bottom: 10px solid rgb(255, 166, 0);
+    border-top-width: 40px;
+    border-right-width: 40px;
+    border-bottom-width: 40px;
+    border-top-left-radius: 92%;
+    border-bottom-left-radius: 72%;
+    border-bottom-right-radius: 72%;
+}
+
+.body {
+    background: black;
+    margin: -10px;
+}
+
+#rec {
+    transform: translate(1370px, -10px);
+    height: 35px;
+    width: 200px;
+    font-size: calc(0.5rem + 0.6vw);
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 3px;
+    font-size: calc(2rem + 1.1vw);
+}
+
+h1:hover {
+    color: rgb(255, 241, 47);
+    transition: 3s;
+    cursor: pointer;
+    left: -350px;
+}
+
+h2:hover {
+    color: greenyellow;
+    cursor: pointer;
+    transition: 2s;
+}
+
+h2 {
+    color: #004a12;
+    z-index: -1;
+    width: 10px;
+}
+
+.container {
+    margin-top: -250px;
+}
+
+.container .profile {
+    color: white;
+    text-align: left;
+    font-size: calc(0.7rem + 0.7vw);
+    transform: translate(400px);
+}
+
+.container .info {
+    color: white;
+    text-align: left;
+    font-size: calc(0.7rem + 0.7vw);
+    transform: translate(400px);
+}
+
+.container1 {
+    margin-top: -450px;
+    margin-left: -200px;
+}
+
+.container1 .profile {
+    color: white;
+    text-align: left;
+    font-size: calc(0.7rem + 0.7vw);
+    transform: translate(-700px);
+}
+
+.container1 .info1 {
+    color: white;
+    text-align: left;
+    font-size: calc(0.7rem + 0.7vw);
+    transform: translate(400px);
+}
+
+.container2 {
+    margin-top: -950px;
+    margin-left: -20px;
+}
+
+.container2 .profile {
+    color: white;
+    text-align: left;
+    font-size: calc(0.7rem + 0.7vw);
+    transform: translate(-700px);
+}
+
+.container2 .info1 {
+    color: white;
+    text-align: left;
+    font-size: calc(0.7rem + 0.7vw);
+    transform: translate(500px);
+}
+
+
+/* --------cv--------- */
+
+.cv ol li {
+    color: wheat;
+    transform: translate(-640px, 980px);
+    align-items: center;
+    text-align: center;
+    padding: 70px 10px;
+    font-size: calc(0.6rem + 0.6vw);
+}
+
+.cv1 ol li {
+    color: wheat;
+    transform: translate(-950px, 810px);
+    align-items: center;
+    text-align: center;
+    padding: 70px 10px;
+    font-size: calc(0.6rem + 0.6vw);
+}
+
+.cv2 ol li {
+    color: wheat;
+    transform: translate(-1050px, 290px);
+    align-items: center;
+    text-align: center;
+    padding: 70px 10px;
+    font-size: calc(0.6rem + 0.6vw);
+}
+
+ol li:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+#p1 {
+    transform: translate(180px, 790px);
+    border-radius: 350px;
+    position: absolute;
+}
+
+#p11 {
+    transform: translate(-50px, 610px);
+    border-radius: 350px;
+    position: absolute;
+}
+
+#p2 {
+    transform: translate(-200px, 100px);
+    border-radius: 350px;
+    position: absolute;
+}
+
+
+/* .fiche {
+    width: 300px;
+    height: 1500px;
+    background: #ffffffa2;
+    transform: translate(0px, 400px);
+    margin-top: 18px;
+    margin-left: 5px;
+} */
+
+
+/* ------------------------------------------------input------- */
+
+.form1 {
+    background: rgba(0, 0, 0, 0.479);
+    width: 400px;
+    border-radius: 3px;
+    transform: translate(1000px, -4500px);
+}
+
+.form1 fieldset:hover {
+    background: rgba(172, 255, 47, 0.685);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.form1 fieldset {
+    background: rgb(205, 94, 50);
+    color: white;
+    width: 130px;
+    text-align: center;
+    padding: 100px;
+    padding-top: 100px 8px;
+    border: 4px solid wheat;
+    height: 700px;
+}
+
+.form2 {
+    background: rgba(0, 0, 0, 0.479);
+    width: 400px;
+    border-radius: 3px;
+    transform: translate(1010px, -3500px);
+}
+
+.form2 fieldset:hover {
+    background: rgba(172, 255, 47, 0.685);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.form2 fieldset {
+    background: rgb(205, 94, 50);
+    color: white;
+    width: 130px;
+    text-align: center;
+    padding: 100px;
+    padding-top: 100px 8px;
+    border: 4px solid wheat;
+    height: 700px;
+}
+
+.form3 {
+    background: rgba(0, 0, 0, 0.479);
+    width: 400px;
+    border-radius: 3px;
+    transform: translate(1010px, -2500px);
+}
+
+.form3 fieldset:hover {
+    background: rgba(172, 255, 47, 0.685);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.form3 fieldset {
+    background: rgb(205, 94, 50);
+    color: white;
+    width: 130px;
+    text-align: center;
+    padding: 100px;
+    padding-top: 100px 8px;
+    border: 4px solid wheat;
+    height: 700px;
+}
+
+legend b {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+legend b:hover {
+    color: rgb(241, 255, 47);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#nomdebo {
+    width: 300px;
+    height: 45px;
+    margin-left: -100px;
+    border-radius: 5px;
+    background: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#textariadeb {
+    border-radius: 5px;
+    background: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#emaildebo {
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    background: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#emaildeb {
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    background: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h6 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#Envoyer {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(205, 151, 50);
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#Envoyer:hover {
+    background-color: rgb(50, 205, 71);
+    transition: 2s;
+    cursor: pointer;
+}
+
+
+/* ----------------les ancres------------------- */
+
+.lien {
+    transform: translate(0, 100px);
+}
+
+.lien .a {
+    transform: translate(1000px, -200px);
+    display: flow-root;
+    height: 30%;
+}
+
+.lien #ad {
+    height: 50px;
+    width: 200px;
+    transform: translate(40px, -160px);
+    background: rgb(11, 184, 161);
+    color: antiquewhite;
+    border-radius: 10px;
+    font-size: calc(0.6rem + 0.6vw);
+}
+
+.lien #ae {
+    height: 50px;
+    width: 200px;
+    transform: translate(40px, -490px);
+    font-size: calc(0.6rem + 0.6vw);
+    background: rgb(11, 184, 161);
+    color: antiquewhite;
+    border-radius: 10px;
+}
+
+.lien #ad:hover {
+    color: bisque;
+    background: yellowgreen;
+    border: 2px solid wheat;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.lien #ae:hover {
+    color: bisque;
+    background: yellowgreen;
+    border: 2px solid wheat;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.lien #ag:hover {
+    color: bisque;
+    background: yellowgreen;
+    border: 2px solid wheat;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.lien #ag {
+    height: 50px;
+    width: 200px;
+    transform: translate(40px, -420px);
+    background: rgb(11, 184, 161);
+    color: antiquewhite;
+    border-radius: 10px;
+    font-size: calc(0.6rem + 0.6vw);
+}
+
+.cd {
+    transform: translate(300px, -200px);
+}
